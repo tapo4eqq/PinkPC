@@ -831,3 +831,172 @@ main {
         height: 150px;
     }
 }
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    /* Общие стили */
+    body {
+        font-size: 14px;
+    }
+    
+    /* Шапка */
+    .header-container {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .header-right {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .contact-info {
+        margin-bottom: 5px;
+        font-size: 0.8em;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav a {
+        margin: 3px;
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+    
+    .logo {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+    
+    /* Основное содержимое */
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .left-column, 
+    .right-column {
+        width: 100%;
+    }
+    
+    .left-column {
+        order: 2;
+        margin-top: 20px;
+    }
+    
+    .right-column {
+        order: 1;
+    }
+    
+    /* Корзина */
+    #cart {
+        position: static;
+        width: 100%;
+        margin: 20px 0;
+        box-shadow: none;
+    }
+    
+    /* Герой-секция */
+    .hero {
+        padding: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+    
+    /* Карточки товаров */
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-card {
+        padding: 15px;
+    }
+    
+    .product-card img {
+        height: 150px;
+    }
+    
+    /* Футер */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Заголовки страниц */
+    .page-title {
+        font-size: 1.5em;
+        padding-bottom: 10px;
+    }
+    
+    /* Кнопка "Назад" */
+    .back-to-home {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .back-to-home a {
+        display: inline-flex;
+        padding: 5px 10px;
+        background-color: var(--card-bg);
+        border-radius: 20px;
+    }
+}
+
+/* Адаптация для очень маленьких экранов */
+@media (max-width: 480px) {
+    /* Еще более компактные стили */
+    nav a {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    
+    .product-card button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    
+    /* Корзина - компактный вид */
+    .cart-item {
+        flex-wrap: wrap;
+    }
+    
+    .cart-item-name {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cart-item-quantity {
+        margin: 5px 0;
+    }
+    
+    #clear-cart-button {
+        padding: 10px;
+    }
+}
